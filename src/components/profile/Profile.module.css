@@ -34,7 +34,31 @@
   margin: 0.5rem;
   font-size: 2rem;
   color: #8a8b8e;
+  text-decoration: none;
+
+  position: relative;
 }
+
+/*  */
+
+.profileLocation::after,
+.profileTag::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #2196f3;
+  content: '';
+  transition: width 0.3s ease-out;
+}
+
+.profileLocation:hover::after,
+.profileTag:hover::after {
+  width: 100%;
+}
+
+/*  */
 
 .stats {
   width: 100%;

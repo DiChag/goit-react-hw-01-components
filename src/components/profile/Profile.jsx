@@ -13,8 +13,22 @@ export const Profile = ({
       <div className={css.description}>
         <img src={avatar} alt="User avatar" className={css.avatar} />
         <p className={css.profileName}>{username}</p>
-        <p className={css.profileTag}>@{tag}</p>
-        <p className={css.profileLocation}>{location}</p>
+        <a
+          className={css.profileTag}
+          href="https://t.me/DiChagin"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @{tag}
+        </a>
+        <a
+          className={css.profileLocation}
+          href="https://goo.gl/maps/oFtWD3hbJfpfDMeG6"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {location}
+        </a>
       </div>
 
       <ul className={css.stats}>
